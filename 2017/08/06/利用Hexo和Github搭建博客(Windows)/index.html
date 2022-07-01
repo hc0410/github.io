@@ -136,14 +136,14 @@
 <p>2.建好之后项目右侧有个settings按钮，点击它，向下拉到GitHub Pages，你会看到那边有个网址，访问它，你将会惊奇的发现该项目已经被部署到网络上，能够通过外网来访问它。<br><img src="https://huangcheng-pic.oss-cn-shanghai.aliyuncs.com/githubsetting.jpg"></p>
 <p><img src="https://huangcheng-pic.oss-cn-shanghai.aliyuncs.com/githubpages.jpg">   </p>
 <h6 id="Hexo和Github-Pages关联"><a href="#Hexo和Github-Pages关联" class="headerlink" title="Hexo和Github Pages关联"></a>Hexo和Github Pages关联</h6><p>1.设置Git的user name和email，在E:&#x2F;Blog下，右键选择Git Base Here<br><img src="https://huangcheng-pic.oss-cn-shanghai.aliyuncs.com/email.png">   </p>
-<p>2.输入ssh-keygen -t rsa -C “<a href="mailto:&#104;&#117;&#97;&#x6e;&#103;&#x63;&#104;&#101;&#110;&#103;&#97;&#x69;&#x71;&#x40;&#113;&#113;&#x2e;&#x63;&#111;&#x6d;">&#104;&#117;&#97;&#x6e;&#103;&#x63;&#104;&#101;&#110;&#103;&#97;&#x69;&#x71;&#x40;&#113;&#113;&#x2e;&#x63;&#111;&#x6d;</a>“，连续三个回车，生成密钥，最后得到了两个文件：id_rsa和id_rsa.pub（默认存储路径是：C:\Users\Administrator.ssh）。<br><img src="https://huangcheng-pic.oss-cn-shanghai.aliyuncs.com/keygen.jpg">   </p>
+<p>2.输入ssh-keygen -t rsa -C “<a href="mailto:&#104;&#117;&#x61;&#x6e;&#x67;&#99;&#x68;&#101;&#110;&#103;&#x61;&#x69;&#113;&#x40;&#113;&#113;&#46;&#99;&#x6f;&#109;">&#104;&#117;&#x61;&#x6e;&#x67;&#99;&#x68;&#101;&#110;&#103;&#x61;&#x69;&#113;&#x40;&#113;&#113;&#46;&#99;&#x6f;&#109;</a>“，连续三个回车，生成密钥，最后得到了两个文件：id_rsa和id_rsa.pub（默认存储路径是：C:\Users\Administrator.ssh）。<br><img src="https://huangcheng-pic.oss-cn-shanghai.aliyuncs.com/keygen.jpg">   </p>
 <p>3.输入eval “$(ssh-agent -s)”，添加密钥到ssh-agent<br><img src="https://huangcheng-pic.oss-cn-shanghai.aliyuncs.com/eval.png">   </p>
 <p>4.再输入ssh-add ~&#x2F;.ssh&#x2F;id_rsa，添加生成的SSH key到ssh-agent    </p>
 <p><img src="https://huangcheng-pic.oss-cn-shanghai.aliyuncs.com/ssh.png">   </p>
 <p><img src="https://huangcheng-pic.oss-cn-shanghai.aliyuncs.com/keys.jpg">   </p>
 <p>5.登录Github，点击头像下的Settings，添加SSH Keys<br><img src="https://huangcheng-pic.oss-cn-shanghai.aliyuncs.com/set.jpg">   </p>
 <p>6.点击new ssh key，将id_rsa.pub文件里的内容复制上去<br><img src="https://huangcheng-pic.oss-cn-shanghai.aliyuncs.com/tianjia.jpg">   </p>
-<p>7.执行ssh -T <a href="mailto:&#x67;&#105;&#116;&#x40;&#x67;&#105;&#x74;&#x68;&#x75;&#98;&#46;&#99;&#111;&#x6d;">&#x67;&#105;&#116;&#x40;&#x67;&#105;&#x74;&#x68;&#x75;&#98;&#46;&#99;&#111;&#x6d;</a>，测试添加ssh是否成功。如果看到Hi后面是你的用户名，就说明成功了<br><img src="https://huangcheng-pic.oss-cn-shanghai.aliyuncs.com/success.jpg">   </p>
+<p>7.执行ssh -T <a href="mailto:&#x67;&#105;&#116;&#64;&#103;&#105;&#116;&#x68;&#x75;&#98;&#46;&#x63;&#x6f;&#109;">&#x67;&#105;&#116;&#64;&#103;&#105;&#116;&#x68;&#x75;&#98;&#46;&#x63;&#x6f;&#109;</a>，测试添加ssh是否成功。如果看到Hi后面是你的用户名，就说明成功了<br><img src="https://huangcheng-pic.oss-cn-shanghai.aliyuncs.com/success.jpg">   </p>
 <h6 id="交由github托管"><a href="#交由github托管" class="headerlink" title="交由github托管"></a>交由github托管</h6><p>1.修改 _config.yml    </p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/deployment.html</span><br><span class="line">deploy:</span><br><span class="line">  type:</span><br></pre></td></tr></table></figure>
 <p>修改为  </p>
@@ -160,7 +160,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2017/08/06/%E5%88%A9%E7%94%A8Hexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2(Windows)/" data-id="cl524hsjl000b59sa64o8553g" data-title="利用Hexo和Github搭建自己的博客(Windows)" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2017/08/06/%E5%88%A9%E7%94%A8Hexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2(Windows)/" data-id="cl524q6ps000c75sa34d0335s" data-title="利用Hexo和Github搭建自己的博客(Windows)" class="article-share-link">Share</a>
       
       
       
